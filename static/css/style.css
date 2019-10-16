@@ -222,6 +222,10 @@ footer .links a + a {
     flex-direction: column
   }
 
+  .site .site-image {
+    margin-right: 0em;
+  }
+
   .site .site-text {
     width: 100%;
     padding: 1em 0;
