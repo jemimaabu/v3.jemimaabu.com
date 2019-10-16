@@ -70,7 +70,8 @@ header .intro-container .intro-image img {
 
 @media (max-width: 700px) {
   header .intro-container {
-    flex-direction: column-reverse
+    flex-direction: column-reverse;
+    width: 100%;
   }
 
   header .intro-container .intro-text {
