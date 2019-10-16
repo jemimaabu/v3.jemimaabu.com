@@ -4,6 +4,13 @@
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+* a {
+  color: inherit;
+  text-decoration-color: var(--pink-accent);
+  text-transform: lowercase;
 }
 
 body {
@@ -81,14 +88,64 @@ nav a {
   margin: 0 1em;
 }
 
+main section {
+  padding: 2em 7.5em;
+}
+
+.site {
+  display: flex;
+  align-items: center;
+  margin: 0em 7.5em;
+  padding: 2em 0;
+}
+
+.site + .site {
+  border-top: 5px solid var(--pink-accent);
+}
+
+.site .site-image {
+  margin-right: 1em;
+}
+
+.site-image img {
+  width: 100%;
+  filter: grayscale(1);
+  transition: filter .3s;
+}
+
+.site-image img:hover {
+  filter: grayscale(0)
+}
+
+.site .site-text {
+  padding: 1em;
+  width: 65%;
+}
+
+.site-text h3 {
+  text-transform: uppercase;
+  color: var(--pink-accent);
+}
+
+.site-stack li {
+  list-style: none;
+  padding: 0.5em;
+  border: 1px solid grey;
+  display: inline-block;
+  margin: 0 8px 16px 0;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
 .section-break {
   height: 45vh;
   background-attachment: fixed;
-  background-size: contain;
+  background-size: cover;
 }
 
 .section-break.work {
   background-image: url("https://raw.githubusercontent.com/jemimaabu/jemimaabu.com/master/static/images/typing.jpg");
+  background-position: center;
 }
 
 footer {
@@ -109,7 +166,17 @@ footer .links a + a {
   margin-left: 1em;
 }
 
+@media (max-width: 950px) {
+  .site {
+    margin: 0em;
+  }
+}
+
 @media (max-width: 700px) {
+  header {
+    padding: 2em;
+  }
+
   header .intro-container {
     flex-direction: column-reverse;
     width: 100%;
@@ -136,6 +203,24 @@ footer .links a + a {
 
   nav {
     height: auto;
+  }
+
+  main section {
+    padding: 2em;
+  }
+
+  .site {
+    flex-direction: column
+  }
+
+  .site .site-text {
+    width: 100%;
+    padding: 1em 0;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
