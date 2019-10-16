@@ -89,12 +89,16 @@ nav a {
 }
 
 main section {
-  padding: 2em 7.5em;
+  margin: 0em 7.5em;
+  padding: 2em 0;
+}
+
+.sites-container h2 {
+  margin: 0;
 }
 
 .site {
   display: flex;
-  align-items: center;
   margin: 0em 7.5em;
   padding: 2em 0;
 }
@@ -118,13 +122,14 @@ main section {
 }
 
 .site .site-text {
-  padding: 1em;
+  padding: 0em 1em;
   width: 65%;
 }
 
 .site-text h3 {
   text-transform: uppercase;
   color: var(--pink-accent);
+  margin-top: 0;
 }
 
 .site-stack li {
@@ -141,6 +146,9 @@ main section {
   height: 45vh;
   background-attachment: fixed;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center
 }
 
 .section-break.work {
@@ -206,6 +214,7 @@ footer .links a + a {
   }
 
   main section {
+    margin: 0em;
     padding: 2em;
   }
 
