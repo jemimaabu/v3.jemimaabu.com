@@ -8,6 +8,7 @@
 
 body {
   margin: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
 header {
@@ -16,7 +17,7 @@ header {
   background-image: radial-gradient(#eee 20%, transparent 0), radial-gradient(#eee 20%, transparent 0);
   background-size: 10px 10px;
   background-position: 0 0, 15px 15px;
-  padding: 2em;
+  padding: 2em 7.5em;
 }
 
 header .intro-container {
@@ -24,11 +25,8 @@ header .intro-container {
   border-radius: 1em;
   padding: 1em;
   min-height: calc(90vh - 4em);
-  font-family: 'Montserrat', sans-serif;
   display: flex;
   align-items: center;
-  width: 90%;
-  margin: 0 auto;
 }
 
 header .intro-container #intro-loader {
@@ -48,7 +46,7 @@ header .intro-container a {
 
 header .intro-container .intro-text {
   width: 75%;
-  margin-left: 5em;
+  margin-left: 6.5em;
 }
 
 header .intro-container .intro-text h1 {
@@ -66,6 +64,49 @@ header .intro-container .intro-image {
 header .intro-container .intro-image img {
   width: 50%;
   border-radius: 50%;
+}
+
+nav {
+  height: 10vh;
+  padding: 1em 7.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav a {
+  color: inherit;
+  text-decoration-color: var(--pink-accent);
+  text-transform: lowercase;
+  margin: 0 1em;
+}
+
+.section-break {
+  height: 45vh;
+  background-attachment: fixed;
+  background-size: contain;
+}
+
+.section-break.work {
+  background-image: url("https://raw.githubusercontent.com/jemimaabu/jemimaabu.com/master/static/images/typing.jpg");
+}
+
+footer {
+  width: 100%;
+  padding: 2em 7.5em;
+  border-top: 1px solid var(--pink-accent);
+  display: flex;
+  justify-content: space-between
+}
+
+footer .links a {
+  color: inherit;
+  text-transform: lowercase;
+  text-decoration-color: var(--pink-accent);
+}
+
+footer .links a + a {
+  margin-left: 1em;
 }
 
 @media (max-width: 700px) {
@@ -88,10 +129,13 @@ header .intro-container .intro-image img {
     text-align: justify;
   }
   
-
   header .intro-container .intro-image {
     width: 100%;
     padding: 0;
+  }
+
+  nav {
+    height: auto;
   }
 }
 
