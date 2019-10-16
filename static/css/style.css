@@ -221,6 +221,7 @@ footer .links a + a {
   footer {
     flex-direction: column;
     align-items: center;
+    padding: 2em;
   }
 }
 
