@@ -11,6 +11,11 @@
   color: inherit;
   text-decoration-color: var(--pink-accent);
   text-transform: lowercase;
+  transition: filter .3s;
+}
+
+* a:hover {
+  filter: brightness(75%);
 }
 
 body {
@@ -18,7 +23,7 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-header {
+.landing-page {
   min-height: 90vh;
   background: #fff;
   background-image: radial-gradient(#eee 20%, transparent 0), radial-gradient(#eee 20%, transparent 0);
@@ -27,7 +32,13 @@ header {
   padding: 2em 7.5em;
 }
 
-header .intro-container {
+.landing-page h1 {
+  font-family: 'Lobster', sans-serif;
+  font-size: 3.5rem;
+  margin: 0.25em 00;
+}
+
+.landing-page .intro-container {
   border: 5px solid var(--pink-accent);
   border-radius: 1em;
   padding: 1em;
@@ -36,41 +47,36 @@ header .intro-container {
   align-items: center;
 }
 
-header .intro-container #intro-loader {
+.landing-page .intro-container #intro-loader {
   color: var(--pink-accent);
   transition: opacity 1s;
   opacity: 1;
 }
 
-header .intro-container #intro-loader.fade {
+.landing-page .intro-container #intro-loader.fade {
   animation: blink 2s infinite forwards;
 }
 
-header .intro-container a {
+.landing-page .intro-container a {
   color: inherit;
   text-decoration-color: var(--pink-accent);
 }
 
-header .intro-container .intro-text {
+.landing-page .intro-container .intro-text {
   width: 75%;
   margin-left: 6.5em;
 }
 
-header .intro-container .intro-text h1 {
-  font-family: 'Lobster', cursive;
-  font-size: 3.5rem;
-  margin: 0.25em 00;
-}
-
-header .intro-container .intro-image {
+.landing-page .intro-container .intro-image {
   width: 50%;
   padding: 1em;
   text-align: center;
 }
 
-header .intro-container .intro-image img {
+.landing-page .intro-container .intro-image img {
   width: 50%;
   border-radius: 50%;
+  min-width: 150px;
 }
 
 nav {
@@ -93,8 +99,28 @@ main section {
   padding: 2em 0;
 }
 
+.section-break {
+  height: 45vh;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.section-break.work {
+  background-color: #eee;
+  background-image: url("https://raw.githubusercontent.com/jemimaabu/jemimaabu.com/master/static/images/typing.jpg");
+  background-position: center;
+}
+
+.section-link {
+  padding: 1em;
+  text-align: center;
+}
+
 .sites-container h2 {
-  margin: 0;
+  margin: 16px 0;
 }
 
 .site {
@@ -142,19 +168,6 @@ main section {
   text-transform: uppercase;
 }
 
-.section-break {
-  height: 45vh;
-  background-attachment: fixed;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center
-}
-
-.section-break.work {
-  background-image: url("https://raw.githubusercontent.com/jemimaabu/jemimaabu.com/master/static/images/typing.jpg");
-  background-position: center;
-}
 
 footer {
   width: 100%;
@@ -174,37 +187,38 @@ footer .links a + a {
   margin-left: 1em;
 }
 
+
 @media (max-width: 950px) {
   .site {
     margin: 0em;
   }
 }
 
-@media (max-width: 700px) {
-  header {
+@media (max-width: 750px) {
+  .landing-page {
     padding: 2em;
   }
 
-  header .intro-container {
+  .landing-page .intro-container {
     flex-direction: column-reverse;
     width: 100%;
   }
 
-  header .intro-container .intro-text {
+  .landing-page .intro-container .intro-text {
     width: 100%;
     margin-left: 0;
   }
 
-  header .intro-container .intro-text h1,
-  header .intro-container .intro-text h2 {
+  .landing-page .intro-container .intro-text h1,
+  .landing-page .intro-container .intro-text h2 {
     text-align: center;
   }
 
-  header .intro-container .intro-text p {
+  .landing-page .intro-container .intro-text p {
     text-align: justify;
   }
   
-  header .intro-container .intro-image {
+  .landing-page .intro-container .intro-image {
     width: 100%;
     padding: 0;
   }
@@ -242,4 +256,57 @@ footer .links a + a {
   from {opacity: 1;}
   75% {opacity: 1;}
   to {opacity: 0;}
+}
+
+/* Work.html */
+.page-section {
+  margin: 2em 7.5em;
+}
+
+.page-section ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  padding: 0;
+  margin: 0;
+}
+
+.page-section ul li {
+  margin: 1em 2em;
+}
+
+.page-section ul b {
+  text-transform: uppercase;
+  color: var(--pink-accent)
+}
+
+.page-section ul p {
+  margin: 0.2em 0;
+  font-size: 15px;
+}
+
+.page-section ul a {
+  margin: 0.2em 0;
+  font-size: 14px;
+}
+
+@media (max-width: 950px) {
+  .page-section {
+    margin: 2em 0em;
+  }
+}
+
+@media (max-width: 750px) {
+  .page-section {
+    margin: 1em 0em;
+  }
+
+  .page-section ul {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .page-section ul li {
+    margin: 1em;
+  }
 }
