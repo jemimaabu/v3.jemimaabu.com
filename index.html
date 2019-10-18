@@ -220,42 +220,65 @@
             <b>CodeMash 2020</b>
             <p>6th January - 10 January, 2020</p>
             <p>Sandusky, Ohio</p>
-            <a href="https://www.codemash.org/speaker-details/?id=1c39739d-b8e3-41ea-afb8-67d26857a105" target="_blank">visit site</a>
+            <a href="https://www.codemash.org/speaker-details/?id=1c39739d-b8e3-41ea-afb8-67d26857a105"
+              target="_blank">visit site</a>
             <a class="disabled" aria-disabled="true">slides coming soon</a>
           </li>
           <li>
-              <b>DNN Summit 2020</b>
-              <p>24th February, 2020</p>
-              <p>Orlando, Florida</p>
-              <a href="https://www.dnnsummit.org/Attend/Conference/Speakers" target="_blank">visit site</a>
-              <a class="disabled" aria-disabled="true">slides coming soon</a>
-            </li>
+            <b>DNN Summit 2020</b>
+            <p>24th February, 2020</p>
+            <p>Orlando, Florida</p>
+            <a href="https://www.dnnsummit.org/Attend/Conference/Speakers" target="_blank">visit site</a>
+            <a class="disabled" aria-disabled="true">slides coming soon</a>
+          </li>
         </ul>
       </div>
       <h2 class="section-title">Recent Talks:</h2>
       <div class="section-container">
-          <h3 class="speaking-year">2019</h3>
-          <ul class="styled-list">
-            <li>
-              <b>Breaking Down Best Practices For JAMstack</b>
-              <p class="list-subtitle">JAMstack Lagos</p>
-              <p>14th September, 2019</p>
-              <p>Lagos, Nigeria</p>
-              <a href="https://www.meetup.com/JAMStack-Lagos/events/263995250/" target="_blank">visit site</a>
-              <a href="https://noti.st/jemimaabu/gNF5op/breaking-down-best-practices-for-jamstack" target="_blank">view slides</a>
-            </li>
-            <li>
-              <b>CSS Grid: A How-To Guide</b>
-              <p class="list-subtitle">Frontstack</p>
-              <p>26th February, 2019</p>
-              <p>Lagos, Nigeria</p>
-              <a href="https://frontstack.io/" target="_blank">visit site</a>
-              <a href="https://noti.st/jemimaabu/zh5uc0/css-grid-a-how-to-guide" target="_blank">view slides</a>
-            </li>
-          </ul>
+        <h3 class="speaking-year">2019</h3>
+        <ul class="styled-list">
+          <li>
+            <b>Breaking Down Best Practices For JAMstack</b>
+            <p class="list-subtitle">JAMstack Lagos</p>
+            <p>14th September, 2019</p>
+            <p>Lagos, Nigeria</p>
+            <a href="https://www.meetup.com/JAMStack-Lagos/events/263995250/" target="_blank">visit site</a>
+            <a href="https://noti.st/jemimaabu/gNF5op/breaking-down-best-practices-for-jamstack" target="_blank">view
+              slides</a>
+          </li>
+          <li>
+            <b>CSS Grid: A How-To Guide</b>
+            <p class="list-subtitle">Frontstack</p>
+            <p>26th February, 2019</p>
+            <p>Lagos, Nigeria</p>
+            <a href="https://frontstack.io/" target="_blank">visit site</a>
+            <a href="https://noti.st/jemimaabu/zh5uc0/css-grid-a-how-to-guide" target="_blank">view slides</a>
+          </li>
+        </ul>
       </div>
     </section>
-    <section id="contact"></section>
+    <div class="section-break contact">
+    </div>
+    <section id="contact">
+      <h2 class="section-title">Send Me A Message</h2>
+      <div class="section-container">
+        <form name="contact" method="POST" data-netlify="true">
+          <p>
+            <label>Your Name:<br> <input type="text" name="name" required/></label>
+          </p>
+          <p>
+            <label>Your Email:<br> <input type="email" name="email" required/></label>
+          </p>
+          <p>
+            <label>Message:<br> <textarea name="message" required maxlength="1000" id="message" oninput="messageCount()"></textarea></label>
+            <small><span id="message-count">1000</span> characters</small>
+          </p>
+          <p style="text-align: center;">
+            <button type="submit">Send</button>
+          </p>
+        </form>
+      </div>
+    </section>
   </main>
   <footer>
     <div class="copyright">&copy; 2019 Jemima Abu</div>

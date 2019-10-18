@@ -116,9 +116,6 @@ main section {
   background-color: #eee;
   background-attachment: fixed;
   background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .section-break.work {
@@ -129,6 +126,14 @@ main section {
 .section-break.speaking {
   background-image: url("https://raw.githubusercontent.com/jemimaabu/jemimaabu.com/master/static/images/speaking.jpg");
   background-position: top;
+}
+
+.section-break.contact {
+  background-color: #fff;
+  background-image: radial-gradient(var(--pink-accent) 10%, transparent 0),
+    radial-gradient(var(--pink-accent) 10%, transparent 0);
+  background-size: 15px 15px;
+  background-position: 0 0, 22.5px 22.5px;
 }
 
 .section-link {
@@ -224,6 +229,37 @@ main section {
   font-size: 14px;
 }
 
+form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+form label {
+  text-transform: uppercase;
+  color: var(--pink-accent);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+form input, form textarea {
+  width: 100%;
+}
+
+form textarea {
+  height: 30vh;
+}
+
+form button {
+  border: none;
+  background-color: transparent;
+  text-decoration: underline;
+  text-decoration-color: var(--pink-accent);
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  text-transform: lowercase;
+}
+
 footer {
   width: 100%;
   padding: 2em 7.5em;
@@ -249,6 +285,10 @@ footer .links a + a {
 
   .page-section {
     margin: 2em 0em;
+  }
+
+  form {
+    width: 75%;
   }
 }
 
@@ -291,7 +331,7 @@ footer .links a + a {
   }
 
   .section-link {
-    padding: 0;
+    padding: 0 0 1em;
   }
 
   .site {
@@ -318,6 +358,10 @@ footer .links a + a {
 
   .styled-list li {
     margin: 1em;
+  }
+
+  form {
+    width: 100%;
   }
 
   footer {

@@ -14,3 +14,12 @@ function loadIntro() {
     index = 0;
   }
 }
+
+function messageCount() {
+  var msg = document.getElementById("message").value;
+  var msgCount = document.getElementById("message-count")
+  var msgLength = msg.length;
+  const maxLength = 1000;
+  var charLeft = maxLength - msgLength;
+  msgCount.innerText = charLeft;
+}
