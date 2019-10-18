@@ -47,7 +47,7 @@ body {
 .landing-page .intro-title {
   font-family: "Lobster", sans-serif;
   font-size: 3.5rem;
-  margin: 0.25em 00;
+  margin: 16px 0;
 }
 
 .landing-page .intro-container {
@@ -63,6 +63,7 @@ body {
   color: var(--pink-accent);
   transition: opacity 1s;
   opacity: 1;
+  text-transform: capitalize;
 }
 
 .landing-page .intro-container #intro-loader.fade {
