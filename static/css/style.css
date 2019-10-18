@@ -194,7 +194,7 @@ main section {
 }
 
 .page-section {
-  margin: 2em 7.5em;
+  margin: 1em 7.5em;
 }
 
 .styled-list {
@@ -207,6 +207,10 @@ main section {
 
 .styled-list li {
   margin: 1em 2em;
+}
+
+#speaking .styled-list li {
+  margin-top: 0;
 }
 
 .styled-list b {
@@ -284,7 +288,7 @@ footer .links a + a {
   }
 
   .page-section {
-    margin: 2em 0em;
+    margin: 1em 0em;
   }
 
   form {
@@ -345,10 +349,6 @@ footer .links a + a {
   .site .site-text {
     width: 100%;
     padding: 1em 0 0;
-  }
-
-  .page-section {
-    margin: 1em 0em;
   }
 
   .styled-list {
