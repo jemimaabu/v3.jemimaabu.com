@@ -168,7 +168,6 @@ main section {
   text-transform: uppercase;
 }
 
-
 footer {
   width: 100%;
   padding: 2em 7.5em;
@@ -231,6 +230,10 @@ footer .links a + a {
     margin: 0em;
     padding: 2em;
   }
+  
+  .section-link {
+    padding: 0;
+  }
 
   .site {
     flex-direction: column
@@ -242,7 +245,7 @@ footer .links a + a {
 
   .site .site-text {
     width: 100%;
-    padding: 1em 0;
+    padding: 1em 0 0;
   }
 
   footer {
