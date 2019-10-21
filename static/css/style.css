@@ -2,12 +2,6 @@
   --pink-accent: #f29fc3;
 }
 
-@font-face {
-  font-family: 'Montserrat';
-  font-display: auto;
-  src: local('Montserrat'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2) format('woff2');
-}
-
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
