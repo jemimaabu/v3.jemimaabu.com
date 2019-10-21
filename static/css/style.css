@@ -32,7 +32,7 @@
 
 body {
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
 }
 
 .landing-page {
@@ -46,7 +46,7 @@ body {
 }
 
 .landing-page .intro-title {
-  font-family: "Lobster", sans-serif;
+  font-family: Lobster, "Courier New", Courier, sans-serif;
   font-size: 3.5rem;
   margin: 16px 0;
 }
