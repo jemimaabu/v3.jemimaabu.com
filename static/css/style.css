@@ -185,6 +185,11 @@ main section {
   margin-top: 0;
 }
 
+.site-stack {
+  padding: 0;
+  margin: 0;
+}
+
 .site-stack li {
   list-style: none;
   padding: 0.5em;
