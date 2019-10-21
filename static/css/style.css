@@ -14,7 +14,8 @@
   transition: filter 0.3s;
 }
 
-* a:hover {
+* a:hover,
+* a:focus {
   filter: brightness(75%);
 }
 
