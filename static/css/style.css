@@ -289,6 +289,98 @@ footer .links a + a {
   margin-left: 1em;
 }
 
+.resume-page header {
+  min-height: 25vh;
+  background: #fff;
+  background-image: radial-gradient(#eee 20%, transparent 0),
+    radial-gradient(#eee 20%, transparent 0);
+  background-size: 10px 10px;
+  background-position: 0 0, 15px 15px;
+  padding: 2em 7.5em;
+  border-bottom: 1px solid var(--pink-accent);
+  text-align: center;
+}
+
+.resume-section {
+  display: flex;
+  border-bottom: 1px solid grey;
+}
+
+.resume-section .section-title,
+.resume-section .section-info {
+  padding: 1em 0;
+  margin: 0;
+}  
+
+.resume-section .section-title {
+  width: 15%;
+  color: var(--pink-accent);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.resume-section .section-info {
+  width: 85%;
+}
+
+.resume-section .section-info p {
+  margin: 0;
+}
+
+.resume-section .section-info a {
+  text-transform: none;
+}
+
+.section-info .experience {
+  margin-bottom: 1em;
+}
+
+#balloon-container {
+  height: 90vh;
+  padding: 1em;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  position: absolute;
+  background: transparent;
+  top: 0;
+  left: 0;
+}
+
+.balloon {
+  height: 125px;
+  width: 105px;
+  border-radius: 75% 75% 70% 70%;
+  position: relative;
+}
+
+.balloon:before {
+  content: "";
+  height: 75px;
+  width: 1px;
+  padding: 1px;
+  background-color: #FDFD96;
+  display: block;
+  position: absolute;
+  top: 125px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.balloon:after {
+    content: "▲";
+    text-align: center;
+    display: block;
+    position: absolute;
+    color: inherit;
+    top: 120px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
 @media (max-width: 950px) {
   .section-container {
     padding: 0;
@@ -376,6 +468,10 @@ footer .links a + a {
     align-items: center;
     padding: 2em;
   }
+
+  #balloon-container {
+    height: 100vh;
+  }
 }
 
 @keyframes blink {
@@ -388,4 +484,11 @@ footer .links a + a {
   to {
     opacity: 0;
   }
+}
+
+@keyframes float {
+  from {transform: translateY(100vh);
+  opacity: 1;}
+  to {transform: translateY(-300vh);
+  opacity: 0;}
 }
