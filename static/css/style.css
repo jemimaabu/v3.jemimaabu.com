@@ -390,6 +390,8 @@ footer .links a + a {
   }
 }
 
+/* Resume section */
+
 .resume-page header {
   min-height: 25vh;
   background: #fff;
