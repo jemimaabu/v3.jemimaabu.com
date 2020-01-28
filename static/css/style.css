@@ -301,6 +301,10 @@ footer .links a + a {
   form {
     width: 75%;
   }
+
+  .section-text {
+    margin: 1em;
+  }
 }
 
 @media (max-width: 750px) {
