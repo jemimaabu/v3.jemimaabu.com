@@ -220,9 +220,10 @@ main section {
   margin-top: 0;
 }
 
-.styled-list b {
+.styled-list h4 {
   text-transform: uppercase;
   color: var(--pink-accent);
+  margin: 0;
 }
 
 .styled-list .list-subtitle {
@@ -252,7 +253,8 @@ form label {
   font-weight: bold;
 }
 
-form input, form textarea {
+form input,
+form textarea {
   width: 100%;
 }
 
