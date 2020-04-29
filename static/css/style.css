@@ -38,11 +38,16 @@ body {
 .landing-page {
   min-height: 90vh;
   background: #fff;
-  background-image: radial-gradient(#eee 20%, transparent 0),
-    radial-gradient(#eee 20%, transparent 0);
+  background-image: radial-gradient(#eee 15%, transparent 0),
+    radial-gradient(#eee 15%, transparent 0);
   background-size: 10px 10px;
   background-position: 0 0, 15px 15px;
   padding: 2em 7.5em;
+}
+
+.landing-page.work {
+  background-image: radial-gradient(#eee 10%, transparent 0),
+    radial-gradient(#eee 10%, transparent 0);
 }
 
 .landing-page .intro-title {
