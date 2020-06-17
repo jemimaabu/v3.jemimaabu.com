@@ -334,10 +334,6 @@ footer .links a + a {
     text-align: center;
   }
 
-  .landing-page .intro-container .intro-text p {
-    text-align: justify;
-  }
-
   .landing-page .intro-container .intro-image {
     width: 100%;
     padding: 0;
