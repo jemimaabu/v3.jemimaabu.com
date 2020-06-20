@@ -53,7 +53,7 @@ body {
 .landing-page .intro-title {
   font-family: Lobster, "Courier New", Courier, sans-serif;
   font-size: 3.5rem;
-  margin: 16px 0;
+  margin: 1rem 0;
 }
 
 .landing-page .intro-container {
@@ -149,7 +149,7 @@ main section {
 }
 
 .section-title {
-  margin: 16px 0;
+  margin: 1em 0;
 }
 
 .section-container {
@@ -200,8 +200,8 @@ main section {
   padding: 0.5em;
   border: 1px solid grey;
   display: inline-block;
-  margin: 0 8px 16px 0;
-  font-size: 11px;
+  margin: 0 0.5em 1em 0;
+  font-size: 0.75rem;
   text-transform: uppercase;
 }
 
@@ -233,17 +233,18 @@ main section {
 
 .styled-list .list-subtitle {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 1rem;
+  margin: 0.15rem 0;
 }
 
 .styled-list p {
   margin: 0.2em 0;
-  font-size: 15px;
+  font-size: 0.95rem;
 }
 
 .styled-list a {
   margin: 0.2em 0;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 form {
@@ -254,7 +255,7 @@ form {
 form label {
   text-transform: uppercase;
   color: var(--pink-accent);
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: bold;
 }
 
