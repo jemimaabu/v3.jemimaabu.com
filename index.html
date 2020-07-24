@@ -446,13 +446,13 @@
       <div class="section-container">
         <form name="contact" method="POST" data-netlify="true">
           <p>
-            <label for="name">Your Name:<br> <input type="text" name="name" required /></label>
+            <label for="name">Your Name:<br> <input type="text" id="name" required /></label>
           </p>
           <p>
-            <label>Your Email:<br> <input type="email" name="email" required /></label>
+            <label for="email">Your Email:<br> <input type="email" id="email" required /></label>
           </p>
           <p>
-            <label>Message:<br> <textarea name="message" required maxlength="1000" id="message"
+            <label for="message">Message:<br> <textarea required maxlength="1000" id="message"
                 oninput="messageCount()"></textarea></label>
             <small><span id="message-count">1000</span> characters</small>
           </p>
