@@ -1,5 +1,6 @@
 :root {
-  --pink-accent: #ff4998;
+  --light-pink-accent: #ff7ab4;
+  --pink-accent: #e80065;
 }
 
 * {
@@ -9,7 +10,7 @@
 
 * a {
   color: inherit;
-  text-decoration-color: var(--pink-accent);
+  text-decoration-color: var(--light-pink-accent);
   text-transform: lowercase;
   transition: filter 0.3s;
 }
@@ -57,7 +58,7 @@ body {
 }
 
 .landing-page .intro-container {
-  border: 5px solid var(--pink-accent);
+  border: 5px solid var(--light-pink-accent);
   border-radius: 1em;
   padding: 1em;
   min-height: calc(90vh - 4em);
@@ -74,11 +75,6 @@ body {
 
 .landing-page .intro-container #intro-loader.fade {
   animation: blink 2s infinite forwards;
-}
-
-.landing-page .intro-container a {
-  color: inherit;
-  text-decoration-color: var(--pink-accent);
 }
 
 .landing-page .intro-container .intro-text {
@@ -107,8 +103,6 @@ nav {
 }
 
 nav a {
-  color: inherit;
-  text-decoration-color: var(--pink-accent);
   text-transform: lowercase;
   margin: 0 1em;
 }
@@ -137,8 +131,8 @@ main section {
 
 .section-break.contact {
   background-color: #fff;
-  background-image: radial-gradient(var(--pink-accent) 10%, transparent 0),
-    radial-gradient(var(--pink-accent) 10%, transparent 0);
+  background-image: radial-gradient(var(--light-pink-accent) 10%, transparent 0),
+    radial-gradient(var(--light-pink-accent) 10%, transparent 0);
   background-size: 15px 15px;
   background-position: 0 0, 22.5px 22.5px;
 }
@@ -162,7 +156,7 @@ main section {
 }
 
 .site + .site {
-  border-top: 5px solid var(--pink-accent);
+  border-top: 5px solid var(--light-pink-accent);
 }
 
 .site .site-image {
@@ -272,7 +266,7 @@ form button {
   border: none;
   background-color: transparent;
   text-decoration: underline;
-  text-decoration-color: var(--pink-accent);
+  text-decoration-color: var(--light-pink-accent);
   padding: 0;
   margin: 0;
   font: inherit;
@@ -282,15 +276,13 @@ form button {
 footer {
   width: 100%;
   padding: 2em 7.5em;
-  border-top: 1px solid var(--pink-accent);
+  border-top: 1px solid var(--light-pink-accent);
   display: flex;
   justify-content: space-between;
 }
 
 footer .links a {
-  color: inherit;
   text-transform: lowercase;
-  text-decoration-color: var(--pink-accent);
 }
 
 footer .links a + a {
