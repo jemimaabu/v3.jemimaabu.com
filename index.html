@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Jemima Abu is a front end developer, content creator, conference speaker, feminist and an all-round nerd.">
+  <meta name="description"
+    content="Jemima Abu is a front end developer, content creator, conference speaker, feminist and an all-round nerd.">
   <meta name="author" content="Jemima Abu">
   <meta property="og:title" content="Jemima Abu: Front End Developer">
   <meta property="og:type" content="website">
@@ -229,7 +230,8 @@
             <h4>Frontcon</h4>
             <p><time datetime="2020-08-13">13th August, 2020</time></p>
             <p>Riga, Latvia</p>
-            <a href="https://2020.frontcon.com/speaker/jemima-abu/" target="_blank" rel="noopener noreferrer">visit site</a>
+            <a href="https://2020.frontcon.com/speaker/jemima-abu/" target="_blank" rel="noopener noreferrer">visit
+              site</a>
           </li>
           <li>
             <h4>React Live</h4>
@@ -435,7 +437,8 @@
             <p><time datetime="2019-02-26">26th February, 2019</time></p>
             <p>Lagos, Nigeria</p>
             <a href="https://frontstack.io/" target="_blank" rel="noopener noreferrer">visit site</a>
-            <a href="https://noti.st/jemimaabu/zh5uc0/css-grid-a-how-to-guide" target="_blank" rel="noopener noreferrer">view slides</a>
+            <a href="https://noti.st/jemimaabu/zh5uc0/css-grid-a-how-to-guide" target="_blank"
+              rel="noopener noreferrer">view slides</a>
           </li>
         </ul>
       </div>
@@ -445,15 +448,15 @@
     <section id="contact">
       <h2 class="section-title">Send Me A Message</h2>
       <div class="section-container">
-        <form name="contact" method="POST" data-netlify="true">
+        <form name="contact" method="POST" data-netlify="true" action="#contact?success">
           <p>
-            <label for="name">Your Name:<br> <input type="text" id="name" required /></label>
+            <label for="name">Your Name:<br> <input type="text" id="name" name="name" required /></label>
           </p>
           <p>
-            <label for="email">Your Email:<br> <input type="email" id="email" required /></label>
+            <label for="email">Your Email:<br> <input type="email" id="email" name="email" required /></label>
           </p>
           <p>
-            <label for="message">Message:<br> <textarea required maxlength="1000" id="message"
+            <label for="message">Message:<br> <textarea required maxlength="1000" id="message" name="message"
                 oninput="messageCount()"></textarea></label>
             <small><span id="message-count">1000</span> characters</small>
           </p>
