@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat&display=swap');
+
 :root {
   --light-pink-accent: #ff7ab4;
   --pink-accent: #e80065;
@@ -49,6 +51,10 @@ body {
 .landing-page.work {
   background-image: radial-gradient(#eee 10%, transparent 0),
     radial-gradient(#eee 10%, transparent 0);
+}
+
+.landing-page.slides a {
+  font-size: 1rem;
 }
 
 .landing-page .intro-title {
